@@ -1,0 +1,34 @@
+{
+    "architecture": [
+        "64bit",
+        ""
+    ],
+    "machine": "x86_64",
+    "os_name": "posix",
+    "platform": "Darwin-18.2.0-x86_64-i386-64bit",
+    "processor": "i386",
+    "release": "18.2.0",
+    "system": "Darwin",
+    "uname": [
+        "Darwin",
+        "Hugos-MacBook-Air.local",
+        "18.2.0",
+        "Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64",
+        "x86_64",
+        "i386"
+    ],
+    "version": "Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64",
+    "python_build": [
+        "default",
+        "Mar 27 2019 16:54:48"
+    ],
+    "python_compiler": "Clang 4.0.1 (tags/RELEASE_401/final)",
+    "python_implementation(": "CPython",
+    "python_version(": "3.7.3",
+    "python_version_tuple": [
+        "3",
+        "7",
+        "3"
+    ],
+    "cpu_count": 4
+}
