@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-"""Modify each function until the tests the_answer = None
+"""Modify each function unpython ../course/week2/tests.pytil the tests the_answer = None
 
     return the_answer.
 
@@ -43,7 +43,7 @@ def add_5(a_number):
         return a_number plus five
     except expressed in python, not english
     """
-    the_answer = None
+    the_answer = a_number + 5
 
     return the_answer
 
@@ -53,7 +53,7 @@ def adder(a_number, another_number):
 
     Same as above, but with any two numbers.
     """
-    the_answer = None
+    the_answer = a_number + another_number
 
     return the_answer
 
@@ -66,8 +66,8 @@ def shout(a_string):
     or in any of the million places that google will give you.
     "python make a string uppercase" is a good starting search query.
     """
-    the_answer = None
-
+    the_answer = a_string.upper()
+                
     return the_answer
 
 
@@ -78,7 +78,7 @@ def really_shout(a_string):
     from above.
     Look up how to 'concatinate' strings to make this happen.
     """
-    the_answer = None
+    the_answer = a_string.upper() + '!'
 
     return the_answer
 
@@ -86,12 +86,12 @@ def really_shout(a_string):
 def shout_with_a_number(a_string, a_number):
     """Return a string in uppercase with a space and a_number concatentated.
     E.g.
-    >>> shout_with_a_number('hello', 42)
+    >>> shout_with_a_number('5hello', 42)
     'HELLO 42'
 
     HINT: Lookup how to cast a_number to a string or lookup how to use string formatting in python
     """
-    the_answer = None
+    the_answer = a_string.upper() + ' ' + str(a_number)
 
     return the_answer
 

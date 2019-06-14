@@ -11,18 +11,18 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
-some_words = ['what', 'does', 'this', 'line', 'do', '?']
+some_words = ['what', 'does', 'this', 'line', 'do', '?', 'word', 'x']
 
-for word in some_words:
-    print(word)
+for word in some_words: # This would print "word" due to the print function  
+    print(word) # Printed word
 
-for x in some_words:
-    print(x)
+for x in some_words: # This would print "x" due to the print function
+    print(x) # Printed x
 
 print(some_words)
 
-if len(some_words) > 3:
-    print('some_words contains more than 3 words')
+if len(some_words) > 3: 
+    print('some_words contains more than 3 words') # printed some_words contains more than 3 words
 
 def usefulFunction():
     """
@@ -30,6 +30,7 @@ def usefulFunction():
     what the line below does:
     https://docs.python.org/3/library/platform.html#platform.uname
     """
+    #
     print(platform.uname())
 
 usefulFunction()
