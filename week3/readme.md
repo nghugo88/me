@@ -26,3 +26,11 @@ To create a loop without a range
         start+=step 
     return None 
     If theres no (step) variable then add a number which will define the step -> such as '2'
+
+    I've also learned that this is so damn hard 
+        while True:
+        t = input("enter a number between {} and {}".format(low,high))
+        t = int(t)
+        if t < high and t > low:
+            return t
+    for a while loop of true and false
