@@ -4,3 +4,5 @@ a_string.upper() + ' ' + str(a_number)
  + ' ' is a space
  'a_number' and a_number is different 
  str(a_number) turns into string number
+ Always remember to add a : at end of code
+ Looping is mainly done with list = []
