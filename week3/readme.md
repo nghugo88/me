@@ -36,3 +36,4 @@ To create a loop without a range
     for a while loop of true and false
     Doing a script without (' ') or (" ") will mess up the scripts as it requires a string
     Having issues with the last 2 of ex1 and still trying to understand the guessing game.
+    Exercise 4 don't quite understand
