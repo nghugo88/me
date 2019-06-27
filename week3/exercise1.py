@@ -68,7 +68,7 @@ def not_number_rejector(message):
     """
     answer = False
     while answer != True:
-        t = input (message)
+        t = input ('message')
         try:
            val = int('t')
            print('t')
