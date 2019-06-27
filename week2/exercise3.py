@@ -34,9 +34,9 @@ def fix_it(moves=True, should_move=True):
     """
     if moves == True:
         if should_move == True:
-            return 'Duct Tape'
-        else: 
             return 'No Problem'
+        else: 
+            return 'Duct Tape'
     else:
         if should_move == True:
             return 'WD-40'
@@ -239,12 +239,18 @@ def loops_7():
     lots of diagrams!
     """
     list1 = []
-    for a in range (5):
+    for a in range (1,6):
         list2 = []
-        for b in range (9):
+        for b in range (1,10):
+            x = 0
+            y = 5
+            if b > y - a and b < y + a:
+            list2.append("*")
+        else:
             list2.append(" ")
-        list1.append(list2)
-    return list1
+        x = x + 1
+    list1.append(list2)
+return list1
 
 
 def lp(some_kind_of_list, exercise_name):
