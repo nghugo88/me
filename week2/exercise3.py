@@ -245,12 +245,12 @@ def loops_7():
             x = 0
             y = 5
             if b > y - a and b < y + a:
-            list2.append("*")
-        else:
-            list2.append(" ")
-        x = x + 1
-    list1.append(list2)
-return list1
+                list2.append("*")
+            else:
+                list2.append(" ")
+            x = x + 1
+        list1.append(list2)
+    return list1
 
 
 def lp(some_kind_of_list, exercise_name):
