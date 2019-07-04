@@ -8,12 +8,11 @@ def is_odd(a_number):
     """
     answer = None
     if a_number % 2 == 0:
-        # it's even
+        # it's even 
         answer = False
     else:
         # it's odd
         answer = True
-
     return answer
 
 
@@ -34,14 +33,14 @@ def fix_it(moves=True, should_move=True):
     """
     if moves == True:
         if should_move == True:
-            return 'No Problem'
-        else: 
-            return 'Duct Tape'
+            return "No Problem"
+        else:
+            return "Duct Tape"
     else:
         if should_move == True:
-            return 'WD-40'
+            return "WD-40"
         else:
-            return 'No Problem'
+            return "No Problem"
 
 
 def loops_1a():
@@ -51,7 +50,6 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-
     list = []
     for i in range (10):
         list.append("*")
@@ -69,6 +67,7 @@ def loops_1c(number_of_items=5, symbol="#"):
     for i in range (int(number_of_items)):
         list.append(symbol)
     return list
+    
 
 
 def loops_2():
@@ -90,12 +89,12 @@ def loops_2():
           ]
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for i in range (10):
+        for a in range (10):
             list2.append("*")
         list1.append(list2)
-    return list1
+    return list1       
 
 
 def loops_3():
@@ -120,13 +119,12 @@ def loops_3():
          so call str(number) to cast.
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for b in range (10):
-            list2.append(str(a))
+        for a in range (10):
+            list2.append(str(i))
         list1.append(list2)
     return list1
-
 
 def loops_4():
     """Make a block of numbers that rises left to right.
@@ -146,10 +144,10 @@ def loops_4():
     ]
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for b in range (10):
-            list2.append(str(b))
+        for a in range (10):
+            list2.append(str(a))
         list1.append(list2)
     return list1
 
@@ -179,10 +177,10 @@ def loops_5():
     you'll come to see the pros and cons of each over time.
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for b in range (5):
-            list2.append("(" + "i" + str(a) + "," + " " + "j" + str(b) + ")")
+        for a in range (5):
+            list2.append("(" + "i" + str(i) + "," + " " + "j" + str(a) + ")")
         list1.append(list2)
     return list1
 
@@ -209,12 +207,14 @@ def loops_6():
     TIP: look out for the starting condition.
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for b in range (a+1):
-            list2.append(str(b))
+        for a in range (i+1):
+            list2.append(str(a))
         list1.append(list2)
     return list1
+    
+
 
 
 def loops_7():
@@ -239,12 +239,12 @@ def loops_7():
     lots of diagrams!
     """
     list1 = []
-    for a in range (1,6):
+    for i in range (1,6):
         list2 = []
-        for b in range (1,10):
+        for a in range (1,10):
             x = 0
             y = 5
-            if b > y - a and b < y + a:
+            if a > y - i and a < y + i:
                 list2.append("*")
             else:
                 list2.append(" ")

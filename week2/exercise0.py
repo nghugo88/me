@@ -25,6 +25,7 @@ def add_1(a_number):
     This is an example function to get you started. 
     Run the tests now and this one should go green. Free marks!
     """
+   
     the_answer = a_number + 1
 
     return the_answer
@@ -52,11 +53,12 @@ def adder(a_number, another_number):
     """Add two numbers.
 
     Same as above, but with any two numbers.
-    """
-    the_answer = a_number + another_number
+    """ 
+
+    the_answer = a_number +another_number
 
     return the_answer
-
+   
 
 def shout(a_string):
     """Return a string in uppercase.
@@ -67,7 +69,7 @@ def shout(a_string):
     "python make a string uppercase" is a good starting search query.
     """
     the_answer = a_string.upper()
-                
+    
     return the_answer
 
 
@@ -83,6 +85,7 @@ def really_shout(a_string):
     return the_answer
 
 
+
 def shout_with_a_number(a_string, a_number):
     """Return a string in uppercase with a space and a_number concatentated.
     E.g.
@@ -94,7 +97,6 @@ def shout_with_a_number(a_string, a_number):
     the_answer = a_string.upper() + ' ' + str(a_number)
 
     return the_answer
-
 
 """#################################"""
 
