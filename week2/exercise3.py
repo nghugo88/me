@@ -125,6 +125,7 @@ def loops_3():
             list2.append(str(i))
         list1.append(list2)
     return list1
+        
 
 def loops_4():
     """Make a block of numbers that rises left to right.
