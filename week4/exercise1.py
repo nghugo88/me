@@ -33,14 +33,14 @@ def get_some_details():
          dictionary, you'll need integer indeces for lists, and named keys for
          dictionaries.
     """
-    url = "https://randomuser.me"
-    r = requests.get(url)
-    list1 = []
     json_data = open(LOCAL + "/lazyduck.json").read()
     data = json.loads(json_data)
     lastname = data["results"][0]["name"]["last"]
-    password = data["results"][0]["login"]["password"] 
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+    password = data["results"][0]["login"]["password"]
+    A = data["results"][0]["location"]["postcode"]
+    B = data["results"][0]["id"]["value"]
+    postcodePlusID = int(A) + int(B)
+    return {"lastName": lastname, "password": password, "postcodePlusID": postcodePlusID}
 
 
 def wordy_pyramid():

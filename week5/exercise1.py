@@ -20,6 +20,7 @@ you'll need to figure out for yourself what to do.
 # much better job of what it's trying to do. Once you've has a little look,
 # move on, and eventually delete this function. (And this comment!)
 def do_bunch_of_bad_things():
+    countdown("Getting ready to start in", 0, 1, "Let's go!")
     print("Getting ready to start in 9")
     print("Getting ready to start in 8")
     print("Getting ready to start in 7")
