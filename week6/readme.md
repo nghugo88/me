@@ -1,1 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Machine Learning
+Can be done in a varieties of way, i think using the If Loop is one of the best method to do it as we have learnt it before in tutorial and during lab. This can be done by stating the statement "If your arms are higher than your neck" Print the hail taxi image. Another statement can be seen as "If your elbow are higher than your shoulder" call taxi. Etc.
