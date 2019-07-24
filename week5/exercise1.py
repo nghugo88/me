@@ -66,32 +66,42 @@ def countdown(message, start, stop, completion_message):
 # The stub functions are made for you, and each one is tested, so this should
 # hand hold quite nicely.
 def calculate_hypotenuse(base, height):
-    pass
+    h = (base ** 2 + height ** 2) ** (1 / 2)
+    return h
+    #Used ** for base raised to the power of 2
 
 
 def calculate_area(base, height):
-    pass
-
+    c = (base * height) / 2
+    return c
+    # * = Base x Height / 2
 
 def calculate_perimeter(base, height):
-    pass
-
+    p = (base * base + height * height) ** (1 / 2) + base + height
+    return p
 
 def calculate_aspect(base, height):
-    pass
+    aspect = ""
+    if height > base:
+        aspect = "tall"
+    elif base > height:
+        aspect = "wide"
+    else:
+        aspect = "equal"
+    return aspect
 
 
 # Make sure you reuse the functions you've already got
 # Don't reinvent the wheel
 def get_triangle_facts(base, height, units="mm"):
     return {
-        "area": None,
-        "perimeter": None,
-        "height": None,
-        "base": None,
-        "hypotenuse": None,
-        "aspect": None,
-        "units": None,
+        "area": calculate_area(base, height),
+        "perimeter": calculate_perimeter(base, height),
+        "height": height,
+        "base": base,
+        "hypotenuse": calculate_hypotenuse(base, height),
+        "aspect": calculate_aspect(base, height),
+        "units": units,
     }
 
 
@@ -141,17 +151,30 @@ def tell_me_about_this_right_triangle(facts_dictionary):
         "It has a perimeter of {perimeter}{units}\n"
         "This is a {aspect} triangle.\n"
     )
-
+    if facts_dictionary["aspect"] == "tall":
+        diagram = tall.format(**facts_dictionary)
+    elif facts_dictionary["aspect"] == "wide":
+        diagram = wide.format(**facts_dictionary)
+    else:
+        diagram = equal.format(**facts_dictionary)
     facts = pattern.format(**facts_dictionary)
+    return( diagram + "\n" + facts)
+
+    # The Area = calculate_area
+    # The Perimeter = calculate_perimeter
+    # The Aspect = calculate_aspect
 
 
 def triangle_master(base, height, return_diagram=False, return_dictionary=False):
+    fact = get_triangle_facts(base, height)
+    diagram = tell_me_about_this_right_triangle(fact)
     if return_diagram and return_dictionary:
-        return None
+        return {"diagram": diagram, "fact": fact}
+        # Used {} to modify inside variables
     elif return_diagram:
-        return None
+        return diagram
     elif return_dictionary:
-        return None
+        return fact
     else:
         print("You're an odd one, you don't want anything!")
 
@@ -167,14 +190,16 @@ def wordy_pyramid(api_key):
         "&limit=1"
     )
     pyramid_list = []
-    for i in range(3, 21, 2):
-        url = baseURL.format(api_key="", length=i)
-        r = requests.get(url)
-        if r.status_code is 200:
-            message = r.json()[0]["word"]
-            pyramid_list.append(message)
-        else:
-            print("failed a request", r.status_code, i)
+    def test (x,y,z)
+        for i in range(3, 21, 2):
+            url = baseURL.format(api_key="", length=i)
+            r = requests.get(url)
+            if r.status_code is 200:
+                message = r.json()[0]["word"]
+                pyramid_list.append(message)
+            else:
+                print("failed a request", r.status_code, i)
+    
     for i in range(20, 3, -2):
         url = baseURL.format(api_key="", length=i)
         r = requests.get(url)
