@@ -78,7 +78,26 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    pass
+    template = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength={minLength}&maxLength={maxLength}&limit={limit}"
+    minLength = 3
+    maxLength = 20
+    limit = 1
+    nameList = []
+    length = minLength
+    while length <= maxLength:
+        url = template.format(base = template, minLength = length, maxLength = length, limit = limit)
+        r = requests.get(url)
+        if r.status_code is 200:
+            data = json.loads(r.text)
+            if data[0]["word"] is None:
+                pass
+            else:
+             nameList.insert(int(len(nameList)/2),data[0]["word"])
+             #print(str(length)+ "\t" + data[0]["word"])
+             length += 1
+    nameList.reverse()
+    return nameList
+    
 
 
 def pokedex(low=1, high=5):
@@ -118,6 +137,22 @@ def diarist():
          the test will have nothing to look at.
     TIP: this might come in handy if you need to hack a 3d print file in the future.
     """
+    filepath = "week4/Trispokedovetiles(laser).gcode"
+    mode = "r" #for reading
+    laserReader = open(filepath,mode)
+    counter = 0
+    #laserOn = "M11 P1"
+    laserOff = "M10 P1"
+    for lineReader in laserReader:
+        #print(lineReader)
+        if laserOff in lineReader:
+            counter += 1
+    laserReader.close()
+    filepath = "./week4/lasers.pew"
+    mode = "w" # for writing
+    laserWriter = open(filepath,mode)
+    laserWriter.write(str(counter))
+    laserWriter.close()
     pass
 
 
