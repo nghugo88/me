@@ -190,7 +190,7 @@ def wordy_pyramid(api_key):
         "&limit=1"
     )
     pyramid_list = []
-    def test (x,y,z)
+    def test(x,y,z):
         for i in range(3, 21, 2):
             url = baseURL.format(api_key="", length=i)
             r = requests.get(url)

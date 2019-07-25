@@ -5,19 +5,19 @@
     ],
     "machine": "x86_64",
     "os_name": "posix",
-    "platform": "Darwin-18.2.0-x86_64-i386-64bit",
+    "platform": "Darwin-18.6.0-x86_64-i386-64bit",
     "processor": "i386",
-    "release": "18.2.0",
+    "release": "18.6.0",
     "system": "Darwin",
     "uname": [
         "Darwin",
-        "Hugos-MacBook-Air.local",
-        "18.2.0",
-        "Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64",
+        "Hugos-Air.home",
+        "18.6.0",
+        "Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64",
         "x86_64",
         "i386"
     ],
-    "version": "Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64",
+    "version": "Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; root:xnu-4903.261.4~2/RELEASE_X86_64",
     "python_build": [
         "default",
         "Mar 27 2019 16:54:48"
