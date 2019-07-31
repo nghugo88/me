@@ -1,4 +1,4 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+[b] 
 "in" is important in python
 #for loops
 my_list = [1,2,3,4]

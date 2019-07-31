@@ -13,7 +13,7 @@ def loop_ranger(start, stop=None, step=1):
     function, but we'd like you to do it the long way, probably using a loop.
     """
     t = []
-    while start<stop:
+    while start < stop:
         t.append(start)
         start+=step
     return t 
