@@ -1,4 +1,4 @@
-[b] Exercise #1 [/b]
+-------------------------------------Exercise #1-----------------------------------------------
 For Spacing, you can do string + ' ' + str(a_number) <----- The Number Or Anything added
                                   ^----Represents spacing
 
