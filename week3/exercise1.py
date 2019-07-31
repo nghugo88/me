@@ -13,19 +13,18 @@ def loop_ranger(start, stop=None, step=1):
     function, but we'd like you to do it the long way, probably using a loop.
     """
     t = []
-    while start < stop:
+    while start < stop
         t.append(start)
         start+=step
-    return t 
-
+    return t
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    t =[]
-    while start<stop:
+    t = []
+    while start < stop
         t.append(start)
         start+=step
     return t
@@ -66,16 +65,16 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    answer = False
-    while answer != True:
-        t = input ('message')
+    while True:
         try:
-           val = int('t')
-           print('t')
-           answer = True
-           return t 
-        except ValueError:
-            answer = False
+            print(message)
+            not_number_input = int(input())
+        except Exception:
+            pass
+        else:
+            break
+        
+    return not_number_input
             
 
 def super_asker(low, high):
@@ -86,12 +85,16 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
-    answer = False
-    while answer != True:
-        num1 = not_number_rejector("Insert a number that is larger than " + str(low) + "and less than")
-        if int(num1) > low and int(num1) < high:
-            answer = True
-    return num1
+    number = not_number_rejector("Enter a number: ")
+    while number < low or number > high:
+        if number < low:
+            print("Out of bounds, too low")
+            number = not_number_rejector("Enter a number: ")
+        else:
+            print("Out of bounds, too high")
+            number = not_number_rejector("Enter a number: ")
+    
+    return number
 
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
