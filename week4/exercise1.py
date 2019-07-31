@@ -78,29 +78,7 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-
-    template = "http://api.wordnik.com/v4/words.json/randomWords?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5&minLength={minLength}&maxLength={maxLength}&limit={limit}"
-    minLength = 3
-    maxLength = 20
-    limit = 1
-    nameList = []
-    length = minLength
-    while length <= maxLength:
-        url = template.format(base = template, minLength = length, maxLength = length, limit = limit)
-        r = requests.get(url)
-        if r.status_code is 200:
-            data = json.loads(r.text)
-            if data[0]["word"] is None:
-                pass
-            else:
-             nameList.insert(int(len(nameList)/2),data[0]["word"])
-             #print(str(length)+ "\t" + data[0]["word"])
-             length += 1
-    nameList.reverse()
-    return nameList
-
-        
-        
+    pass
 
 
 def pokedex(low=1, high=5):
@@ -119,7 +97,22 @@ def pokedex(low=1, high=5):
     """
     template = "https://pokeapi.co/api/v2/pokemon/{id}"
 
-    pass
+    weight = 1
+    height = 1
+    name = ""
+    for poke in range(low,high):
+        url = template.format(base=template, id=poke)
+        r = requests.get(url)
+        if r.status_code is 200:
+            the_json = json.loads(r.text)
+            if the_json["height"] > height:
+                height = the_json["height"]
+                weight = the_json["weight"]
+                name = the_json["name"]
+
+    
+    return {"name": name, "weight": weight, "height": height}
+
 
  
 
