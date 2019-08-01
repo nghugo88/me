@@ -96,22 +96,21 @@ def pokedex(low=1, high=5):
          variable and then future access will be easier.
     """
     template = "https://pokeapi.co/api/v2/pokemon/{id}"
-
     weight = 1
     height = 1
-    name = ""
+    name = 1
     for poke in range(low,high):
         url = template.format(base=template, id=poke)
-        r = requests.get(url)
-        if r.status_code is 200:
-            the_json = json.loads(r.text)
-            if the_json["height"] > height:
-                height = the_json["height"]
+        req = requests.get(url)
+        if req.status_code == 200:
+            the_json = json.loads(req.text)
+            if the_json ["height"] > height:
                 weight = the_json["weight"]
-                name = the_json["name"]
+                height = the_json["height"]
+                name = the_json ["name"]
 
     
-    return {"name": name, "weight": weight, "height": height}
+    return {"weight": weight, "height": height, "name": name}
 
 
  
@@ -134,7 +133,7 @@ def diarist():
     gcode_data = open(LOCAL + "/Trispokedovetiles(laser).gcode").readlines()
     number_of_times = 0
     for cactusLine in gcode_data:
-        print(cactusLine)
+        print (cactusLine)
         if "M10 P1" in cactusLine:
             number_of_times += 1
     f = open("lasers.pew", "w")

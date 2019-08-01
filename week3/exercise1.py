@@ -36,11 +36,11 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    t =[]
-    while start<stop:
+    t = []
+    while start < stop:
         t.append(start)
         start+=2
-    return t
+    return t 
 
 
 def stubborn_asker(low, high):
@@ -53,9 +53,9 @@ def stubborn_asker(low, high):
     """
     while True:
         t = input("enter a number between {} and {}".format(low,high))
-        t = int(t)
+        t = (int(t))
         if t < high and t > low:
-            return t
+            return t 
 
 
 def not_number_rejector(message):
@@ -67,13 +67,12 @@ def not_number_rejector(message):
     """
     while True:
         try:
-            print(message)
+            print ("message")
             not_number_input = int(input())
         except Exception:
             pass
         else:
             break
-        
     return not_number_input
             
 
@@ -85,16 +84,15 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
-    number = not_number_rejector("Enter a number: ")
-    while number < low or number > high:
-        if number < low:
-            print("Out of bounds, too low")
-            number = not_number_rejector("Enter a number: ")
+    asker = not_number_rejector("Enter a number: ")
+    while asker > high or asker < low:
+        if asker < low:
+            print ("Too low!")
+            asker = not_number_rejector("Enter a number: ")
         else:
-            print("Out of bounds, too high")
-            number = not_number_rejector("Enter a number: ")
-    
-    return number
+            print ("Too High!")
+            asker = not_number_rejector("Enter a number: ")
+    return asker
 
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.

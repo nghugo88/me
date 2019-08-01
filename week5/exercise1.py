@@ -212,11 +212,29 @@ def wordy_pyramid(api_key):
 
 
 def get_a_word_of_length_n(length):
-    pass
+    import requests
+    url = "http://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={lengths}"
+    if type(length) is int and length >= 3: # >= means greater or equal then
+        link = url.format(lengths=length)
+        r = requests.get(link)
+        if r.status_code == 200:
+            message = str(r.content)
+            theword = message[2:len(message)-1]
+        return theword
 
 
 def list_of_words_with_lengths(list_of_lengths):
-    pass
+
+    import requests
+    url = "http://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={lengths}"
+    list = [] 
+    for i in list_of_lengths:
+        link = url.format(lengths=i)
+        r = requests.get(url)
+        if r.status_code == 200:
+            message = r.content
+            list.append(message)
+        return list
 
 
 if __name__ == "__main__":

@@ -8,9 +8,16 @@ For Spacing, you can do string + ' ' + str(a_number)
 
 The Expression == can mean "Is" EG -> If moves is true [ If Moves == True ]
 
+
+
+
+
 -------------------------------------Exercise #2-----------------------------------------------
 
 Exercise 2 was easy, because running the debug console basically solved everything that wasn't working and helped me identified majority of the issues which were capital letters and punctuation errors as well as missing : and ().
+
+
+
 
 
 -------------------------------------Exercise #3-----------------------------------------------
@@ -48,7 +55,7 @@ To Use the command a_number_of_items, you must include first a (int(a_number_of_
 str(), int(), creating range between numbers are all solutions to be used for lists.
 
 Important Notes
- 1. Always remember to put : otherwise will result in syntax error
+ 1. Always remember to put : otherwise will result in Syntax error
  2. == basically means is 
  3. Spacing is crucial
  4. INT is required to do number_of_items

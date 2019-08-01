@@ -8,10 +8,10 @@ def is_odd(a_number):
     """
     answer = None
     if a_number % 2 == 0:
-        # it's even 
+    # it's even 
         answer = False
     else:
-        # it's odd
+    # it's odd
         answer = True
     return answer
 
@@ -34,14 +34,13 @@ def fix_it(moves=True, should_move=True):
     if moves == True:
         if should_move == True:
             return "No Problem"
-        else:
+        else:   
             return "Duct Tape"
     else:
         if should_move == True:
             return "WD-40"
         else:
             return "No Problem"
-
 
 def loops_1a():
     """Make 10 stars.
@@ -52,8 +51,8 @@ def loops_1a():
     """
     list = []
     for i in range (10):
-        list.append("*")
-    return list
+        list.append('*')
+    return list 
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -64,10 +63,9 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
     list = []
-    for i in range (int(number_of_items)):
+    for i in range (number_of_items):
         list.append(symbol)
     return list
-    
 
 
 def loops_2():
@@ -92,7 +90,7 @@ def loops_2():
     for i in range (10):
         list2 = []
         for a in range (10):
-            list2.append("*")
+            list2.append('*')
         list1.append(list2)
     return list1       
 
@@ -119,7 +117,7 @@ def loops_3():
          so call str(number) to cast.
     """
     list1 = []
-    for i in range (10):
+    for i in range (10):    
         list2 = []
         for a in range (10):
             list2.append(str(i))
@@ -145,9 +143,9 @@ def loops_4():
     ]
     """
     list1 = []
-    for i in range (10):
+    for i in range  (10):
         list2 = []
-        for a in range (10):
+        for a in range  (10):
             list2.append(str(a))
         list1.append(list2)
     return list1

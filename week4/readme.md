@@ -20,34 +20,27 @@ Get_Some_Details:
             B = data["results"][0]["id"]["value"]
             PostcodePlusID = Int(A) + Int(B) 
 
-Summary: The reason i wrote step by step is because i found W4 extremely hard to cope with so i made this step by step so i can do it easier with more logical thinkings the next time i do it.
-
 
 Pokedex:
-
-        Doing the Pokedex was hard at first but after doing research online as well as using the Get_some_Details as an example helped me eventually finish this part of the exercise.
         
-        1. Get the template of the Pokemon link
+        1. Put the template of the Pokemon link
         2. Make a variable of Weight and height and make it equal to any integers 
-        3. We need a name for the "unknown" pokemon so make a name = ""
-        4. Creating a Range function so (low,high)
-        5. Now make a similar URL request similar to Get_details and also status code
-        6. Load up the text by doing the_json = json.loads(r.text)
-        7. Create a if function of he two and followed by height and weight
-        8. Then name = the_json["name"] which will name the pokemon
-        6. Finally return everything we have gotten with the names and it's finished
+        3. Creating a Range function so (low,high)
+        4. Now make a similar URL request similar to Get_details and also status code
+        5. Load up the text by doing the_json = json.loads(req.text)
+        6. Create a if function of the two and followed by height and weight
+        7. Then name = the_json["name"] which will name the pokemon
+        8. Finally return everything we have gotten with the names and it's finished
 
     Notes: 
     -> Need to find the Weight and height so we need it in the beginning 
     -> We need the status code from the website otherwise it won't load
 
 
+Diarist
+    - The diarist pretty much involved knowledge from Week 3's exercise 1 as well as previous exercises listed on Week 4's exercise 1. Going through it was ok but it took time to understand each concept by concept.
+
+
 Important Notes
  1. Json requires importing first before doing anything else.
- 2. 
- 3. 
- 4. 
- 5. 
- 6. 
- 7. 
- 8. 
+ 2. Useful tools for Importing json -> jsoneditoronline.org
