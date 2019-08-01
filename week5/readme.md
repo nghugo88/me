@@ -1,10 +1,9 @@
-TODO: Reflect on what you learned this week and what is still unclear.
 
-Lecture Notes:
+__Lecture Notes__
 - Shallow indentation is a good use to simplify the code which can be done by the functions and also through different expressions.
 - Simplifying Code will make it easier to read and to understand in future reference
 
-#Exercise #1
+__Exercise #1__
 
 Countdown
 A Complicated / Messy code can be simplified within the excercise by just using a countdown rather than using 10 prints. This is much more convenient
@@ -27,16 +26,16 @@ For the Triangle exercises
 
 
 
-Triangle Master 
+__Triangle Master__
  - Not much to do except to simplify the code itself with if / elif and else functions which i really found out that it cuts the code by almost half and makes it MUCH more easier to read.
 
-Wordy Pyramid
+__Wordy Pyramid__
  - I attempted to do it but i do not understand and i am still stuck...
 
 Get a word and List_Of_Words
     For this part of the exercise, it took me more than 3 hours to complete and fully understand. Part of this was due to me being forgetting to update the exercises which lead to me being stuck with the old tests which i could not debug properly. However, these 2 parts basically is like importing JSon like in week 4 which takes time to understand. 
 
-    For the Get a word
+    __For the Get a word__
     1. Import request
     2. Put the URL in which is from the US-Central
     3. Make the statement of If type(length)
@@ -47,7 +46,7 @@ Get a word and List_Of_Words
     8. Do [2:len(message)-1] which acquires the words from the url and name it with anything
     9. Return and finished.
 
-    List_Of_Words
+    __List_Of_Words__
     1. Import request
     2. Put the URL in which is from the US-Central
     3. Make a list
@@ -58,14 +57,14 @@ Get a word and List_Of_Words
     8. Do list append
     9. Return the list and finished.
 
-#Exercise #2
+__Exercise #2__
 
 Square Koch
  - The Square Koch was very simple after reading the example provided. As every turn of the Square is 90 Degree, so all i had to do was change the values to 90 degrees as well as changing the koch name to square_koch and it's done.
 
 
 
-#Important Notes
+__Important Notes__
  1. Status Code always set it as 200 
  2. == Means Is
  3. ** Means ^2

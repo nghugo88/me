@@ -1,6 +1,6 @@
-#Exercise #1
+__Exercise #1__
 
-##Get_Some_Details:
+__Get_Some_Details__
         Doing the details one were quite straight forward after receiving help from Ben and his tips. In order to do it step by step
         
         1. Start with opening the Json file which is given in the script
@@ -21,7 +21,7 @@
             PostcodePlusID = Int(A) + Int(B) 
 
 
-##Pokedex:
+__Pokedex__
         
         1. Put the template of the Pokemon link
         2. Make a variable of Weight and height and make it equal to any integers 
@@ -37,10 +37,10 @@
     -> We need the status code from the website otherwise it won't load
 
 
-##Diarist
+__Diarist__
     - The diarist pretty much involved knowledge from Week 3's exercise 1 as well as previous exercises listed on Week 4's exercise 1. Going through it was ok but it took time to understand each concept by concept.
 
 
-#Important Notes
+__Important Notes__
  1. Json requires importing first before doing anything else.
  2. Useful tools for Importing json -> jsoneditoronline.org
