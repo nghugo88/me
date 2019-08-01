@@ -103,13 +103,20 @@ def abba(source="abba", guard=3):
         elif letter == "b":
             return "aob"
         elif letter == "o":
-            return "bao"
+            return "oa"
         else:
             return letter
-
-    # write the rest of the function here
-    pass
-
+        
+    parts = list(source)
+    result = []
+    for i in parts:
+        result.append(apply_rules(i, guard))
+    new_string = "".join(result)
+    guard -= 1
+    if guard > 0:
+        return abba(new_string, guard)
+    else:
+        return new_string
 
 def koch(t, order, size):
     """Make turtle t draw a Koch fractal of 'order' and 'size'."""
