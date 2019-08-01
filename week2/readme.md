@@ -1,4 +1,4 @@
--------------------------------------Exercise #0-----------------------------------------------
+#Exercise #0
 
 For Spacing, you can do string + ' ' + str(a_number) 
         
@@ -12,7 +12,7 @@ The Expression == can mean "Is" EG -> If moves is true [ If Moves == True ]
 
 
 
--------------------------------------Exercise #2-----------------------------------------------
+#Exercise #2
 
 Exercise 2 was easy, because running the debug console basically solved everything that wasn't working and helped me identified majority of the issues which were capital letters and punctuation errors as well as missing : and ().
 
@@ -20,7 +20,7 @@ Exercise 2 was easy, because running the debug console basically solved everythi
 
 
 
--------------------------------------Exercise #3-----------------------------------------------
+#Exercise #3
 Odd and Fix_It Exercise were fairy simple which required the If + Else solutions. For the Fix it, it required a little bit more work as it required more logical thinking while doing it.
 
 To Do A Range, you must do 
@@ -31,7 +31,7 @@ return List <----- Finally return the list that we made to get the stars finishe
 
 For Making more complicated List, it is required to do 2 lists and this can be done by doing the loop within the first loop. 
 
-    Example (Not Spaced Properly):
+        Example (Not Spaced Properly):
 
             list1 = []  <----First Loop
             for i in range (10): <--- Range of 10 means 1 to 9
@@ -43,7 +43,7 @@ For Making more complicated List, it is required to do 2 lists and this can be d
 
 The last one which created the Pyramid required more of a Mathematical Solution which was slightly annoying as it was very hard to solve at first.
 
-How to Solve it:
+How to do it:
         -> It is required to make a range between 1 and 6 and gradually move on
         -> The Maths solution is if a > y - i and a < y + i which would provide us with the shape of a pyramid.
         -> An Else function is crucial as we need to create empty spaces otherwise it would not become a pyramid. 
@@ -54,7 +54,7 @@ To Use the command a_number_of_items, you must include first a (int(a_number_of_
 
 str(), int(), creating range between numbers are all solutions to be used for lists.
 
-Important Notes
+#Important Notes
  1. Always remember to put : otherwise will result in Syntax error
  2. == basically means is 
  3. Spacing is crucial

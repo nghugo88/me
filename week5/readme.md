@@ -4,7 +4,7 @@ Lecture Notes:
 - Shallow indentation is a good use to simplify the code which can be done by the functions and also through different expressions.
 - Simplifying Code will make it easier to read and to understand in future reference
 
--------------------------------------Exercise #1-----------------------------------------------
+#Exercise #1
 
 Countdown
 A Complicated / Messy code can be simplified within the excercise by just using a countdown rather than using 10 prints. This is much more convenient
@@ -58,14 +58,14 @@ Get a word and List_Of_Words
     8. Do list append
     9. Return the list and finished.
 
--------------------------------------Exercise #2-----------------------------------------------
+#Exercise #2
 
 Square Koch
  - The Square Koch was very simple after reading the example provided. As every turn of the Square is 90 Degree, so all i had to do was change the values to 90 degrees as well as changing the koch name to square_koch and it's done.
 
 
 
-Important Notes
+#Important Notes
  1. Status Code always set it as 200 
  2. == Means Is
  3. ** Means ^2
